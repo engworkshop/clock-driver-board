@@ -1,8 +1,9 @@
 # clock-driver
 
+### Step 1
 ![image1](_MG_2800.JPG)
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Step one: These are some instructions   | ![image1](_MG_2800.JPG)        | And more      |
+Blah blah blah.
+### Step 2
+This is just text
+### Step 3
+![image1](_MG_2800.JPG)
