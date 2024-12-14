@@ -5,4 +5,4 @@
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Step one: These are some instructions   | ![image1](_MG_2800.JPG)        | And more      |
