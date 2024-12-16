@@ -1,7 +1,7 @@
 # clock-driver
 
 ### Step 1
-![image1](media/_MG_2800.jpg)
+![image1](media/_MG_2800r.jpg)
 Blah blah blah.
 ### Step 2
 This is just text
