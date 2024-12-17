@@ -18,7 +18,7 @@ schematic
 - 1 kΩ resistor (for example, [DigiKey 1.0KEBK-ND](https://www.digikey.com/en/products/detail/yageo/CFR-12JB-52-1K/4000))
 - 0.1 µF ceramic capacitor (for example, [DigiKey 399-4264-ND](https://www.digikey.com/en/products/detail/kemet/C320C104K5R5TA/818040))
 - male headers (for example, [DigiKey S1011EC-40-ND](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214))
-- (4) M2 self-tapping pan head screws, 5 mm length, for mounting PCB (for example, [Amazon](https://www.amazon.com/gp/product/B07ZH9GJWP))
+- (4) M2 x 5 mm self-tapping pan head screws for mounting PCB (for example, [Amazon](https://www.amazon.com/gp/product/B07ZH9GJWP))
 - [28BYJ-48 5V geared stepper motor](https://www.amazon.com/gp/product/B01CP18J4A)
 
 ## 2.&nbsp;&nbsp; Obtaining the PCB
