@@ -30,7 +30,7 @@ Gerber files
 
 ### Step 3.1
 ![solder clock chip](media/_MG_2800r.jpg)
-Solder the DS3234 clock chip on underside of the PCB. This is fairly easy to do with a fine-tipped soldering iron and desoldering braid ([SparkFun tutorial](https://www.sparkfun.com/tutorials/96)). No dedicated SMD soldering equipment is necessary.
+Solder the DS3234 clock chip on underside of the PCB. This is fairly easy to do with a fine-tipped soldering iron and desoldering braid (see [SparkFun tutorial](https://www.sparkfun.com/tutorials/96)). No dedicated SMD soldering equipment is necessary.
 
 ### Step 3.2
 ![solder headers](media/_MG_2801r.jpg)
