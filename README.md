@@ -1,8 +1,8 @@
 # clock-motor-driver
 
-This repository contains design files for a custom driver printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This driver board incorporates 2 improvements: a dedicated real-time clock chip (the Maxim DS3234) for greater timekeeping accuracy and a dedicated stepper motor driver module (incorporating the Trinamic TMC2208) for quieter motor operation.
+This repository contains design files for a custom driver printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This driver board incorporates 2 improvements: a dedicated real-time clock chip (the Maxim DS3234) for greater timekeeping accuracy and a dedicated bipolar stepper motor driver module (incorporating the Trinamic TMC2208) for quieter motor operation.
 
-The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be connected to the custom driver board. Conversion instructions are included at the bottom of this README file.
+The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be connected to the clock driver board, which only works for bipolar stepper motors. Conversion instructions are included at the bottom of this README file.
 
 (All products shown or mentioned are items that I actually use and have found to work well. I have no relationship with any product supplier.)
 
