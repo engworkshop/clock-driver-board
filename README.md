@@ -34,7 +34,7 @@ Solder the DS3234 clock chip on underside of the PCB. This is fairly easy to do 
 
 ### Step 3.2
 ![solder headers](media/_MG_2801r.jpg)
-Solder male headers for the RP2040 Zero and voltage regulator. Optional: solder a female header for the motor. If you are making a Mystery Clock or Hollow Clock 4 Remix, *do not* solder a connector for the motor. Instead, the motor wires will need to be soldered directly to the PCB in order to fit in the clock base.
+Solder male headers for the RP2040 Zero and voltage regulator. Optional: solder a female header for the motor. If you are making a Mystery Clock or Hollow Clock 4 Remix, do *not* solder a connector for the motor. Instead, the motor wires will need to be soldered directly to the PCB in order to fit in the clock base.
 
 ### Step 3.3
 ![solder parts](media/_MG_2802r.jpg)
