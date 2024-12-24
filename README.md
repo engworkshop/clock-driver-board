@@ -2,7 +2,7 @@
 ![solder parts](media/_MG_2802r.jpg)
 This repository contains design files for a custom driver printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This driver board incorporates 2 improvements: a dedicated real-time clock (RTC) chip (the Maxim DS3234) for greater timekeeping accuracy and a dedicated stepper motor driver module (incorporating the Trinamic TMC2208) for quieter motor operation.
 
-The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be used with the clock driver board’s TMC2208 chip, which is designed for bipolar stepper motors. Conversion instructions are included at the bottom of this README file.
+The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be used with the clock driver board’s TMC2208 chip, which is designed for bipolar stepper motors. Motor conversion instructions are included at the bottom of this README file.
 
 (All products shown or mentioned are items that I actually use and have found to work well. I have no relationship with any product supplier.)
 
@@ -68,4 +68,8 @@ Glue the plastic cover back on the motor. If necessary, trim the remaining tabs 
 
 ## 5.&nbsp;&nbsp; The Code
 
-The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`.
+The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`. The code’s comment block describes its dependencies and operation in detail. The following are required to install the code:
+
+- [Arduino IDE](https://www.arduino.cc/en/software), if you do not already have it
+- Earle Philhower’s [Raspberry Pi Pico RP2040 processor Arduino core](https://arduino-pico.readthedocs.io/en/latest/) using the Arduino Boards Manager
+- SparkFun’s [DS3234 RTC library](https://github.com/sparkfun/SparkFun_DS3234_RTC_Arduino_Library) for Arduino
