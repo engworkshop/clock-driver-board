@@ -1,6 +1,6 @@
 # clock-driver-board
 ![solder parts](media/_MG_2802r.jpg)
-This repository contains design files for a custom driver printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This driver board incorporates 2 improvements. First, a dedicated real-time clock (RTC) chip (the Maxim DS3234) provides significantly greater timekeeping accuracy than the RP2040’s internal clock. The DS3234 incorporates temperature compensation to achieve its improved accuracy. Second, a dedicated stepper motor driver module provides quieter motor operation compared to the ULN2003 chip in the original design. The motor driver module incorporates the Trinamic TMC2208, which employs a “chopper drive” to achieve its quieter operation. 
+This repository contains design files for a custom printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This custom driver board incorporates 2 improvements. First, a dedicated real-time clock (RTC) chip, the Maxim DS3234, provides significantly greater timekeeping accuracy than the RP2040’s internal clock. The DS3234 incorporates temperature compensation to achieve its improved accuracy. Second, a dedicated stepper motor driver module provides quieter motor operation compared to the original design’s ULN2003 chip. The motor driver module incorporates the Trinamic TMC2208, which uses a “chopper drive” for quieter operation. 
 
 The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be used with the clock driver board’s TMC2208 chip, which is designed for bipolar stepper motors. Motor conversion instructions are included at the bottom of this README file.
 
@@ -11,7 +11,7 @@ The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. 
 
 **Brief Circuit Description**
 
-The RP2040 microcontroller communicates with the DS3234 RTC using SPI. The clock chip is configured in software to send an interrupt to the microcontroller once every minute. In response to the interrupt, the microcontroller moves the minute hand through the TMC2208 motor driver. A pull-down resistor on the motor driver’s STEP input prevents spurious motor stepping during startup. A 6V boost regulator satisfies the motor driver’s minimum motor supply voltage.
+The RP2040 microcontroller communicates with the DS3234 RTC using the SPI bus. The clock chip is configured in software to send an interrupt to the microcontroller once every minute. In response to the interrupt, the microcontroller moves the minute hand through the TMC2208 motor driver. A pull-down resistor on the motor driver’s STEP input prevents spurious motor stepping during startup. A 6V boost regulator satisfies the motor driver module’s minimum supply voltage of 5.5V.
 
 **Parts List**
 - [Waveshare RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm) microcontroller board without pin headers
@@ -27,10 +27,10 @@ The RP2040 microcontroller communicates with the DS3234 RTC using SPI. The clock
 - [28BYJ-48 5V geared stepper motor](https://www.amazon.com/gp/product/B01CP18J4A)
 
 ## 2.&nbsp;&nbsp; Obtaining the PCB
-The `board` folder contains Gerber files for the custom PCB. In `upload to DKRed.zip`, I packaged the core files required by the [DKRed custom PCB](https://www.digikey.com/en/resources/dkred) service that I use. I included all Gerber files produced by Fusion 360, but I have only tested those required by DKRed:
+The `board` folder contains the PCB’s Gerber files. In `upload to DKRed.zip`, I packaged the core files required by the [DKRed custom PCB](https://www.digikey.com/en/resources/dkred) service that I use. I included all Gerber files produced by Fusion 360, but I have only tested those required by DKRed:
 - `copper_top.gbr` & `copper_bottom.gbr` — describes copper layers
-- `silkscreen_top.gbr` & `silkscreen_bottom.gbr` — describes silkscreen layers
 - `soldermask_top.gbr` & `soldermask_bottom.gbr` — describes soldermask layers
+- `silkscreen_top.gbr` & `silkscreen_bottom.gbr` — describes silkscreen layers
 - `profile.gbr` - board outline
 - `drill_1_16.xln` - drill locations
 
@@ -68,7 +68,7 @@ Glue the plastic cover back on the motor. If necessary, trim the remaining tabs 
 
 ## 5.&nbsp;&nbsp; The Code
 
-The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`. The code’s comment block describes its dependencies and operation in detail. The following are required to install the code:
+The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`. The code’s comment block details its dependencies and operation. The following are required to install the code:
 
 - [Arduino IDE](https://www.arduino.cc/en/software), if you do not already have it
 - Earle Philhower’s [Raspberry Pi Pico RP2040 processor Arduino core](https://arduino-pico.readthedocs.io/en/latest/) using the Arduino Boards Manager
