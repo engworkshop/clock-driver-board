@@ -18,7 +18,7 @@ The RP2040 microcontroller communicates with the DS3234 RTC using SPI. The clock
 - [TMC2208 SilentStepStick](https://www.amazon.com/gp/product/B08DFVZV5Q) stepper motor driver module
 - [Pololu U3V16F6](https://www.pololu.com/product/4942) 6V boost voltage regulator
 - Maxim DS3234 real-time clock chip ([DigiKey DS3234SN#-ND](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS3234SN/1197584))
-- (2) C&K PTS645VK58-2LFS right angle tactile switches ([DigiKey CKN10950-ND](https://www.digikey.com/en/products/detail/c-k/PTS645VK83-2-LFS/3861399))
+- (2) C&K PTS645VK58-2LFS right angle tactile switches ([DigiKey CKN10965-ND](https://www.digikey.com/en/products/detail/c-k/PTS645VK58-2-LFS/3861398))
 - 33 µF electrolytic capacitor (for example, [DigiKey P977-ND](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECE-A1EKS330/160557))
 - 1 kΩ resistor (for example, [DigiKey 1.0KEBK-ND](https://www.digikey.com/en/products/detail/yageo/CFR-12JB-52-1K/4000))
 - 0.1 µF ceramic capacitor (for example, [DigiKey 399-4264-ND](https://www.digikey.com/en/products/detail/kemet/C320C104K5R5TA/818040))
