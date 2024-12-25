@@ -74,6 +74,6 @@ The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`. 
 - Earle Philhower’s [Raspberry Pi Pico RP2040 processor Arduino core](https://arduino-pico.readthedocs.io/en/latest/) using the Arduino Boards Manager
 - SparkFun’s [DS3234 RTC library](https://github.com/sparkfun/SparkFun_DS3234_RTC_Arduino_Library) for Arduino
 
-## 6.&nbsp;&nbsp; Operation
+## 6.&nbsp;&nbsp; Operating Instructions
 
 The pushbuttons move the clock hands clockwise or counterclockwise. Pushing a button momentarily causes the minute hand to move one minute. Pressing and holding a button moves the minute hand continuously.
