@@ -1,6 +1,6 @@
 # clock-driver-board
 ![solder parts](media/_MG_2802r.jpg)
-This repository contains design files for a custom printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This custom driver board incorporates 2 improvements. First, a dedicated real-time clock (RTC) chip, the Maxim DS3234, provides significantly greater timekeeping accuracy than the RP2040’s internal clock. The DS3234 incorporates temperature compensation to achieve its improved accuracy. Second, a dedicated stepper motor driver module provides quieter motor operation compared to the original design’s ULN2003 chip. The motor driver module incorporates the Trinamic TMC2208, which uses a “chopper drive” for quieter operation. 
+This repository contains design files for a custom printed circuit board (PCB) for the [Mystery Clock](https://makerworld.com/en/models/764838) and [Hollow Clock 4 Remix](https://makerworld.com/en/models/875220) projects on [MakerWorld](https://makerworld.com/en/@EngWorkshop). This custom driver board incorporates 3 improvements. First, a dedicated real-time clock (RTC) chip, the Maxim DS3234, provides significantly greater timekeeping accuracy than the RP2040’s internal clock. The DS3234 incorporates temperature compensation to achieve its improved accuracy. Second, a dedicated stepper motor driver module provides quieter motor operation compared to the original design’s ULN2003 chip. The motor driver module incorporates the Trinamic TMC2208, which uses a “chopper drive” for quieter operation. Third, 2 pushbuttons allow fine adjustment of the hands.
 
 The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. This motor must be converted to a bipolar configuration before it can be used with the clock driver board’s TMC2208 chip, which is designed for bipolar stepper motors. Motor conversion instructions are included at the bottom of this README file.
 
@@ -73,3 +73,7 @@ The `code` folder contains a single Arduino code file, `mystery-clock-tmc.ino`. 
 - [Arduino IDE](https://www.arduino.cc/en/software), if you do not already have it
 - Earle Philhower’s [Raspberry Pi Pico RP2040 processor Arduino core](https://arduino-pico.readthedocs.io/en/latest/) using the Arduino Boards Manager
 - SparkFun’s [DS3234 RTC library](https://github.com/sparkfun/SparkFun_DS3234_RTC_Arduino_Library) for Arduino
+
+## 6.&nbsp;&nbsp; Operation
+
+The pushbuttons move the clock hands clockwise or counterclockwise. Pushing a button momentarily causes the minute hand to move one minute. Pressing and holding a button moves the minute hand continuously.
