@@ -9,7 +9,7 @@ The clock projects use a small, inexpensive 28BYJ-48 5V unipolar stepper motor. 
 ## 1.&nbsp;&nbsp; The Circuit
 ![schematic](media/Clock_Driver_R3_v7.png)
 
-**Brief Circuit Description**
+**Circuit Description**
 
 The RP2040 microcontroller communicates with the DS3234 RTC using the SPI bus. The clock chip is configured in software to send an interrupt to the microcontroller once every minute. In response to the interrupt, the microcontroller moves the minute hand through the TMC2208 motor driver. A pull-down resistor on the motor driver’s STEP input prevents spurious motor stepping during startup. A 6V boost regulator satisfies the motor driver module’s minimum supply voltage of 5.5V.
 
