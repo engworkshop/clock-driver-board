@@ -46,7 +46,7 @@ Solder male headers for the RP2040 Zero and voltage regulator. Optional: solder 
 
 ### Step 3.3
 ![solder parts](media/_MG_2802r.jpg)
-Solder the remaining parts onto the PCB. The PCB can be mounted with M2 screws.
+Solder the remaining parts onto the PCB. Trim the header pins on the bottom of the PCB so they are flush with the solder connection. The PCB can be mounted with M2 screws.
 
 ## 4.&nbsp;&nbsp; Converting the Stepper Motor from Unipolar to Bipolar
 
