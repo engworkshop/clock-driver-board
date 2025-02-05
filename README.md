@@ -56,7 +56,7 @@ With a utility knife, score the small tab on the plastic motor cover until it br
 
 ### Step 4.2
 ![remove plastic tab](media/_MG_3634r.jpg)
-Remove the small plastic tab that was broken off in Step 3.1.
+Remove the small plastic tab that was broken off in Step 3.1. Be careful not to damage the extremely delicate motor windings.
 
 ### Step 4.3
 ![cut PCB trace](media/_MG_3637r.jpg)
